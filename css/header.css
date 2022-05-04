@@ -1,0 +1,856 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: #171718;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* header */
+header {
+    width: 100%;
+    border-bottom: 1px solid #26292D;
+    background: #171718; 
+}
+
+header > div {
+    width: 100%;
+    max-width: 1156px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;  
+     
+}
+
+header > div > h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+}
+
+header > div > ul {
+    width: 100%;
+    max-width: 392px;
+    list-style: none;
+    display: none;
+    flex-direction: row;
+    gap: 24px;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+header > div > ul > li > a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header > div > ul > li > a:hover {
+    border-bottom: 3px solid #5C62EC ;
+}
+
+header > div > label {
+    display: block;
+}
+
+header > div > label > span,
+header > div > label > span::before,
+header > div > label > span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 24px;
+    border-radius: 2px;
+    position: relative;
+}
+
+header > div > label > span::before,
+header > div > label > span::after {
+    content: '';
+    position: absolute;
+}
+
+header > div > label > span::before {
+    bottom: 8px;
+}
+
+header > div > label > span::after {
+    top: 8px;
+    width: 12px;
+    right: 0;
+}
+/* end of header */
+   
+/* For intro section */
+.intro { 
+    margin-top: 129px;
+    margin-bottom: 128px;
+}
+.intro > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro > div > h1{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: #FAFAFA;
+    text-align: center;
+    margin-bottom: 16px;  
+}
+
+.intro > div > h1 > span{
+    color: #5C62EC;
+}
+
+.intro > div > p {  
+    font-family: 'DM Sans', sans-serif;  
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.intro > div > ul {
+    width: 169px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.intro > div > ul > li {
+    list-style: none;
+}
+
+.intro > div > ul > li > a {  
+    font-family: 'DM Sans', sans-serif;
+    min-width: 171px;
+    display: block;
+    padding: 16px 20px; 
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #FAFAFA;
+    border-radius: 5px; 
+}
+
+.intro > div > ul > li > a:hover {
+    color: #FAFAFA;
+    background: #5C62EC;
+    border-color: #5C62EC;
+}
+
+.intro > div > ul > li > a > img {
+    margin-right: 11px;
+    vertical-align: middle;
+}
+/* end of intro */
+
+.about_me {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 967px;
+    padding: 0 16px;
+}
+.about_me > .index-about { 
+    font-family: 'DM Sans', sans-serif;
+    color:#FFFFFF;
+    padding: 16px 16px;
+    margin: 0 0 64px;
+    background: #1C1E22;
+    border: 1.5px solid #26292D;
+    border-radius: 8px;
+}
+
+.about_me > div > img {
+    width: 100%;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.about_me > div > div > h1 {
+    font-size: 1.5em;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.about_me > div > div > p {
+    font-size: 1em;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+}
+
+.about_me > div > div > p:nth-of-type(1) {
+    margin-bottom: 4px;
+}
+
+.about_me > div > div > p:last-of-type {
+    margin-bottom: 16px;
+}
+
+.about_me > div > div > a {
+    border: 1px solid #FFFFFF;
+    padding: 16px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.about_me > div > .about_me_p > a > img {
+    padding-left: 12px;
+}
+
+/* Project */
+.project {
+    width: 100%;
+    max-width: 1155px;
+    margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
+    color: #FFFFFF;
+}
+
+.project > .project-intro {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.project > .project-intro > h1 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+    text-align-last: left;
+    font-weight: 500;
+}
+
+.project > div > img {
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 19px;
+}
+
+.project > div > img:nth-of-type(4){
+    margin-bottom: 24px;  
+}
+
+.project > div > a {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center;
+    background: #5C62EC;   
+    border-radius: 8px; 
+    border-color: none;
+    padding: 16px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0px;
+}
+
+.project > div > a > img {
+    padding-left: 10px;
+}
+/* end of intro.project */
+
+/* Footer */
+.footer {
+    width: 100%;
+    max-width: 1156px;
+    margin: 0 auto;
+}
+.footer > div {
+    border-top: 1px solid #26292D ;
+    border-bottom: 1px solid #26292D;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    margin: 0 16px;
+}
+
+.footer > div > h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.footer > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px
+}
+
+.footer >  div > div > p:nth-last-child(3),
+.footer > div > .social > p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #85BFD1;
+}
+
+.footer > div > div > .social_logo {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > p {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+
+/* about me - Acerca de mi */
+.about_me_about {  
+    margin-top: 32px;
+}
+
+.about_me_about > div {
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+}
+
+.about_me_about > div > .about_me_intro {
+    margin-bottom: 64px;
+    
+}
+
+.about_me_about > div > .about_me_intro > img {
+    width: 100%;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+.about_me_about > div > .about_me_intro > .about_me_p {
+   width: 100%;
+}
+
+.about_me_about > div > .about_me_intro > .about_me_p > h1 {
+    margin-bottom: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+}
+
+.about_me_about > div > .about_me_intro > .about_me_p > p {
+    font-family: 'DM sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+}
+
+.about_me_about > div > .about_me_intro > .about_me_p > a {
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(145 218 219);
+
+}
+
+.about_me_about > div > .about_me_intro > .about_me_p > p:nth-of-type(1) {
+    margin-bottom: 24px;
+}
+
+.about_me_about > div > .about_me_intro > .about_me_p > p:last-of-type {
+    margin-bottom: 16px;
+}
+
+.about_me_about > div > h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.about_me_about > div > .skill_set > div {
+    background: #1C1E22;
+    border-radius: 8px;
+    padding: 24px 24px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    margin-bottom: 24px;
+}
+
+.about_me_about > div > .skill_set {
+    margin-bottom: 64px;
+}
+
+.about_me_about > div > .skill_set > div > h2 {
+    padding-bottom: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+
+}
+
+.about_me_about > div > div > p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+}
+    /* end of about me */
+
+/* project.html - project */
+.project > div {
+    padding: 0 16px
+}
+
+.project > div > div > img {
+    width: 100%;
+    background-size: cover;
+}
+.project > div > h1 {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.project > div > h4 {
+    margin-top: 64px;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #A0A0A1;
+}
+
+.project > div > div {
+    margin-bottom: 32px;
+}
+
+.project > div > div:nth-of-type(1) {
+    margin-bottom: 64px;
+}
+
+.project > div > div > h2 {
+    margin-bottom: 16px;
+    font-size: 48px;
+    line-height: 57px;
+    font-size: 16px;
+}
+
+.project > div > div > h3 {
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.project > div > div:nth-of-type(2) > h3 {
+    margin-bottom: 16px;
+}
+
+.project > div > div:nth-of-type(3) > p:last-of-type {
+    margin-bottom: 24px;
+}
+
+.project > div > div > p > a {
+    color: gray;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: underline;
+    
+}
+
+.project > div > div > p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    color: #FFFFFF;
+    /* font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px; */
+}
+
+.project > div > div:nth-of-type(4) > img:nth-of-type(1) {
+    margin-bottom: 24px;
+} 
+/* end of project.html - project */
+
+/* contact */
+.contact > div {
+    text-align: center;
+    width: 100%;
+    margin: 32px auto 64px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.contact > div > h1 {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+}
+
+.contact > div > p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 334px;
+    margin: 0 auto 24px;
+}
+
+.contact > div > div {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 334px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.contact > div > div > form {
+    background: #26292D;
+    width: 100%;
+    max-width: 406px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+}
+
+.contact > div > div > form > input,
+.contact > div > div > form > textarea {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 24px;
+    background: #1C1E22;
+    padding: 16px 20px 16px;
+    margin: 0 auto;
+
+    font-family: 'Dm sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    background: #1C1E22;
+    border: 1px solid #A0A0A1;
+    border-radius: 8px;
+    color: inherit;
+}
+.contact > div > div > form > label {
+    margin-top: 24px;
+    margin-left: 15px;
+    margin-bottom: 8px;
+}
+
+.contact > div > div > form > input:last-of-type {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background: #5C62EC;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    color: #FFFFFF;
+    border: none;
+}   
+
+    /* media-header */
+@media (min-width: 991px) {
+    header > div > h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+    }
+    header > div > ul {
+        display: flex;
+    } 
+    header > div > label {
+        display: none;
+    }
+}
+    /* end of media-inicio-header */
+
+/* media-inicio-intro*/
+
+@media (min-width: 991px) {
+    .intro > div {
+        margin-bottom: 303px;
+    }
+    .intro > div > h1 {
+        font-size: 60px;
+        line-height: 71px;
+        letter-spacing: -0.5px;
+        color: #FAFAFA;
+    }
+    .intro > div > ul {
+        flex-direction: row;
+    }
+}  /* end of media-inicio-intro */
+
+
+/* media-inicio-about */
+
+@media (min-width: 991px) {
+    .about_me {
+        width: 100%;
+        max-width: 991px;
+    }
+    
+    .about_me > .index-about { 
+        margin: 0;
+        margin-bottom: 128px;
+        display: flex;
+        flex-direction: row;
+    }
+    .about_me > div > img {
+        padding-right: 32px;
+        margin: 0;
+    }
+    .about_me > div > div > h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 48px;
+        line-height: 57px;
+        margin-bottom: 32px;
+    }
+    .about_me > div > div > p {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.44px;
+    }
+    .about_me > div > div > p:last-of-type {
+        margin-bottom: 24px;
+    }
+}   /* end of media-inicio-about */
+
+/* media-inicio-project */
+
+@media (min-width: 991px) {
+
+    .project > .project-intro > h1 {
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+    }
+    .project > div > a {
+        display: inline-block;
+    }
+}   /* end of media-inicio-about */
+
+/* media-inicio-footer */
+
+@media (min-width: 991px) {
+    .footer {
+        padding: 0 16px;
+    }
+    .footer > div {
+        margin: 0;
+    }
+    .footer > div {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 129px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        text-align: left;
+        padding: 64px 0;
+    }  
+    .footer > p {
+        text-align: left;
+    }
+}
+
+    /* end of media-inicio-footer */
+
+/* media - about.html */
+@media (min-width: 991px) {
+    .about_me_about {
+        width: 100%;
+        max-width: 1156px;
+        margin: 0 auto;
+        margin-top: 65px;
+       
+    }
+    .about_me_about > .about_me_about_container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .about_me_about > div > .about_me_intro {
+        display: flex;
+        flex-direction: row;
+        gap: 140px;     
+        margin-bottom: 128px;
+        align-items: center;
+    }
+    .about_me_about > div > .about_me_intro > img {
+        margin: 0;
+    }
+    .about_me_about > div > h2 {
+        margin-bottom: 60px;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+    }
+    .about_me_about >  div > .about_me_intro > .about_me_p > h1 {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 71px;
+        letter-spacing: -0.5px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+    .about_me_about > div > .about_me_intro > .about_me_p > p {
+        margin: 0;
+        margin-bottom: 12px;
+    }
+    .about_me_about > div > .about_me_intro > .about_me_p > p:nth-of-type(1) {
+        margin-bottom: 12px;
+    }
+    .about_me_about > div > .about_me_intro > .about_me_p > p:nth-of-type(3) {
+        margin-bottom: 0;
+    }
+    .about_me_about > div > .about_me_intro > .about_me_p > p:last-of-type {
+        margin-bottom: 14px;
+    }
+    .about_me_about > div > .about_me_intro > .about_me_p > a {
+        color: #5C62EC;
+    }
+    .about_me_about > div  > .skill_set {  
+        width: 100%;   
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 128px;
+    }
+    .about_me_about > div > .skill_set > div {
+        width: calc(33% - 16px);
+        margin: 0;
+    }
+}
+
+/* media - project.html */
+
+@media (min-width: 991px) {
+    .project > div {
+        text-align: left;
+        
+    }
+    .project > .project-intro > h1 {
+        font-size: 60px;
+        line-height: 71px;
+        letter-spacing: -0.5px;
+        font-weight: bold;
+        margin-bottom: 64px;
+    }
+    .project > div > h4 {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+    }
+    .project > div > div {
+        margin-bottom: 128px;
+    }
+    .project > div > div > h3 {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+    }
+    .project > div > div:nth-of-type(2) > h3 {
+        font-size: 48px;
+        line-height: 57px;
+        font-weight: 500;
+    }
+    
+    .project > div > div:nth-of-type(1) {
+        margin-bottom: 128px;
+    }
+}
+    /* end of media - project.html */
+
+/* media - contact.html */
+@media (min-width: 991px) {
+    .contact > div > div {
+        width: 100%;
+        max-width: 447px;
+        margin: 64px auto 128px;
+    }
+    .contact > div > h1 {
+        margin-bottom: 16px;
+        font-size: 60px;
+        line-height: 71px;
+        letter-spacing: -0.5px;
+    }
+    .contact > div > p {
+        margin-bottom: 44px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.15px; 
+        width: 100%;
+        max-width: 991px;
+        margin-bottom: 0 auto;
+    } 
+    .contact > div > div > form {
+        width: 100%;
+        max-width: 447px;
+    }
+    .contact > div > div > form > input,
+    .contact > div > div > form > textarea {
+        width: 100%;
+        max-width: 399px;
+    }
+    .contact > div > div > form > label {
+        margin-left: 24px;
+    }
+    
+}
+
